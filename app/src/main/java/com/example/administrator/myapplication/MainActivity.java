@@ -9,6 +9,8 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.example.administrator.myapplication.yunle.Lishi;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -21,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
               SharedPreferences sp = MainActivity.this.getSharedPreferences("apkifo", MODE_APPEND);
               String ste  = sp.getString("diyi"," ");
               if (ste.equals("1")){
-                  Intent intent = new Intent(MainActivity.this, ZhuJianMian.class);
+                  Intent intent = new Intent(MainActivity.this, Lishi.class);
                   startActivity(intent);
                   finish();
               }else {
@@ -53,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 builder.setNegativeButton("确定", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(MainActivity.this, ZhuJianMian.class);
+                        Intent intent = new Intent(MainActivity.this, Lishi.class);
                         startActivity(intent);
                         chun();
                         finish();
