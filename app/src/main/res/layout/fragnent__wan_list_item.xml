@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-<GridView
-    android:layout_marginTop="50dp"
-    android:paddingLeft="50dp"
-    android:paddingRight="50dp"
-    android:verticalSpacing="20dp"
-    android:numColumns="2"
-    android:id="@+id/gv_wan"
-    android:horizontalSpacing="20dp"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-</GridView>
-
+<ImageView
+    android:id="@+id/tu"
+    android:src="@mipmap/ic_launcher"
+    android:layout_width="100dp"
+    android:layout_height="100dp" />
+<TextView
+    android:textSize="20dp"
+    android:gravity="center_horizontal"
+    android:text="玩"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content" />
 </LinearLayout>

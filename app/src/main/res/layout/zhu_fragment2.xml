@@ -21,12 +21,17 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true" />
     </RelativeLayout>
-<FrameLayout
-    android:id="@+id/fl_wan"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    <GridView
+        android:layout_marginTop="50dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:verticalSpacing="20dp"
+        android:numColumns="2"
+        android:id="@+id/gv_wan"
+        android:horizontalSpacing="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</FrameLayout>
-
+    </GridView>
 
 </LinearLayout>
