@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class MyAdapter extends BaseAdapter {
     ArrayList<Lishishuju> list;
     Context context;
-    MyAdapter(ArrayList<Lishishuju> list,Context context){
+    public MyAdapter(Context context, ArrayList<Lishishuju> list){
         this.list = list;
         this.context = context;
     }
@@ -53,7 +53,7 @@ public class MyAdapter extends BaseAdapter {
         zhidai.title.setText(list.get(position).getTitle());
         BitmapCache bitmapCache = new BitmapCache();
         bitmapCache.setImageLoader(list.get(position).getPic(),zhidai.tu_yi);
-        zhidai.date.setText(list.get(position).getYear()+"年"+list.get(position).getMonth()+"月"+list.get(position).getDay()+"天");
+        zhidai.date.setText(list.get(position).getYear()+"年"+list.get(position).getMonth()+"月"+list.get(position).getDay()+"日");
         zhidai.des.setText(list.get(position).getDes());
         return convertView;
     }
