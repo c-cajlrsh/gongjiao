@@ -12,7 +12,7 @@ import com.example.administrator.myapplication.R;
  */
 public class BitmapCache implements ImageLoader.ImageCache {
     private LruCache<String, Bitmap> mMemoryCache;
-    BitmapCache(){
+    public BitmapCache(){
         final int cacheSize = 1024 * 1024 *  16;
         mMemoryCache = new LruCache<String, Bitmap>(cacheSize){
             @Override

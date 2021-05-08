@@ -19,6 +19,7 @@
         <activity android:name=".ZhuJianMian"/>
         <activity android:name=".yunle.Lishi"/>
         <activity android:name=".Webvi"/>
+        <activity android:name=".yunle.Jingxuan"/>
     </application>
 
 </manifest>

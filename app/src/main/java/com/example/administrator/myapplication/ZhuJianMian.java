@@ -13,12 +13,10 @@ import com.example.administrator.myapplication.fragmentlei.Fragment2;
  */
 public class ZhuJianMian extends AppCompatActivity {
     com.ashokvarma.bottomnavigation.BottomNavigationBar bb_db;
-    Fragment1 fragment1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zhujianmian);
-        fragment1 = new Fragment1();
         bb_db = (BottomNavigationBar) findViewById(R.id.bb_db);
         bb_db.setMode(BottomNavigationBar.MODE_FIXED);
         bb_db
@@ -37,7 +35,7 @@ public class ZhuJianMian extends AppCompatActivity {
                    {
                        android.app.FragmentManager manager = getFragmentManager();
                        android.app.FragmentTransaction fragmentTransaction = manager.beginTransaction();
-                       fragmentTransaction.replace(R.id.ll_layout,fragment1);
+                       fragmentTransaction.replace(R.id.ll_layout,new Fragment1());
                        fragmentTransaction.commit();
                    }
                        break;
@@ -45,7 +43,7 @@ public class ZhuJianMian extends AppCompatActivity {
                    {
                        android.app.FragmentManager manager = getFragmentManager();
                        android.app.FragmentTransaction fragmentTransaction = manager.beginTransaction();
-                       fragmentTransaction.replace(R.id.ll_layout,new Fragment2());
+                       fragmentTransaction.replace(R.id.ll_layout,new Fragment2(ZhuJianMian.this));
                        fragmentTransaction.commit();
                    }
                        break;
@@ -70,7 +68,7 @@ public class ZhuJianMian extends AppCompatActivity {
     private void setDefaultFragment() {
         android.app.FragmentManager manager = getFragmentManager();
         android.app.FragmentTransaction fragmentTransaction = manager.beginTransaction();
-        fragmentTransaction.replace(R.id.ll_layout,fragment1);
+        fragmentTransaction.replace(R.id.ll_layout,new Fragment1());
         fragmentTransaction.commit();
     }
 

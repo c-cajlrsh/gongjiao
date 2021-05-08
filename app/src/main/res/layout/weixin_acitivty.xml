@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_height="44dp">
+        <Button
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:onClick="tuichu"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退出"/>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:id="@+id/tv_yeshu"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:text="第1页"/>
+    </RelativeLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:layout_weight="10"
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_weight="0.01"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <Button
+            android:id="@+id/shagnyi"
+            android:text="上一页"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/xiayiye"
+            android:onClick="xiayiye"
+            android:text="下一页"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                   diao();
               }
           }
-      },2000);
+      },1500);
 
 
     }

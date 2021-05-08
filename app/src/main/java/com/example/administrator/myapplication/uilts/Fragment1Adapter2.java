@@ -7,7 +7,7 @@ import android.widget.BaseAdapter;
 /**
  * Created by Administrator on 2017/1/4.
  */
-public class Fragment2Adapter1 extends BaseAdapter {
+public class Fragment1Adapter2 extends BaseAdapter {
     @Override
     public int getCount() {
         return 0;

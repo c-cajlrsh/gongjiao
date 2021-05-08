@@ -4,10 +4,10 @@
     android:layout_height="match_parent">
 <ImageView
     android:id="@+id/tu"
-    android:src="@mipmap/ic_launcher"
     android:layout_width="100dp"
     android:layout_height="100dp" />
 <TextView
+    android:id="@+id/tv_yingyong"
     android:textSize="20dp"
     android:gravity="center_horizontal"
     android:text="玩"
