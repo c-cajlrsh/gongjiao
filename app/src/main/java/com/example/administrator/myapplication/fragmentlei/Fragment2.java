@@ -1,10 +1,9 @@
 package com.example.administrator.myapplication.fragmentlei;
 
-import android.annotation.TargetApi;
+
 import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -12,7 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
-import android.widget.ListAdapter;
 
 import com.example.administrator.myapplication.R;
 import com.example.administrator.myapplication.uilts.Fragment2Adapter;
@@ -46,14 +44,14 @@ public class Fragment2 extends Fragment {
                 switch(position){
                     case 0:
                         break;
-                    case 1:
+                    case 1: {
                         Intent intent = new Intent(getActivity(), Lishi.class);
                         startActivity(intent);
-                        break;
-                    case 2:
+                    }break;
+                    case 2: {
                         Intent intent1 = new Intent(getActivity(), Jingxuan.class);
                         startActivity(intent1);
-                        break;
+                    }   break;
                     case 3:
                         break;
                 }

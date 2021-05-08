@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:text="第1页"/>
     </RelativeLayout>
-    <com.handmark.pulltorefresh.library.PullToRefreshListView
+    <ListView
         android:layout_weight="10"
         android:id="@+id/listView"
         android:layout_width="match_parent"
