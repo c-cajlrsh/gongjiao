@@ -2,6 +2,7 @@ package com.example.administrator.myapplication.yunle;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ListView;
 
 import com.android.volley.Response;
@@ -96,7 +97,9 @@ public class Lishi extends AppCompatActivity {
         PeiZhiActivity.mrequestQueue.add(stringRequest);
 
     }
-
+public void tuichuli (View view){
+    finish();
+}
 
 
 }
